@@ -4,11 +4,11 @@
 <% @videos.each do |video| %>
   <li class="video"s>
     <div class="thumbnail">
-      <a class="video-link" href="/videos/<%= video[:_id] %>"><img src="<%= video[:thumbnails].first[:url] %>"></a>
-      <span class="duration"><%= video[:nice_duration] %></span>
+      <a class="video-link" href="/videos/<%= video.id %>"><img src="<%= video.thumbnails.first[:url] %>"></a>
+      <span class="duration"><%= video.nice_duration %></span>
     </div>
     <div class="info">
-      <p class="title"><a class="video-link" href="/videos/<%= video[:_id] %>"><%= video[:title] %></a></p>
+      <p class="title"><a class="video-link" href="/videos/<%= video.id %>"><%= video.title %></a></p>
     </div>
   </li>
 <% end %>
