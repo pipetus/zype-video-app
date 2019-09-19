@@ -1,3 +1,30 @@
 // Place all the styles related to the Video controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.video-list {
+  .video {
+    display: flex;
+    flex-direction: row;
+
+    .thumbnail {
+      width: 200px;
+      position: relative;
+      text-align: center;
+      justify-content: center;
+      
+      img {
+        max-width: 200px;
+      }
+
+      .duration {
+        position: absolute;
+      }
+    }
+    
+    .info {
+      display: flex;
+      flex-direction: column
+    }
+  }
+}

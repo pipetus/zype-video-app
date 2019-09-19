@@ -1,2 +1,16 @@
 <h1>Video List</h1>
-<p>Find me in app/views/video/index.html.erb</p>
+
+<ul class="video-list">
+<% @videos.each do |video| %>
+  <li class="video"s>
+    <div class="thumbnail">
+      <a class="video-link" href="/videos/<%= video[:_id] %>"><img src="<%= video[:thumbnails].first[:url] %>"></a>
+      <span class="duration"><%= video[:nice_duration] %></span>
+    </div>
+    <div class="info">
+      <p class="title"><a class="video-link" href="/videos/<%= video[:_id] %>"><%= video[:title] %></a></p>
+      <p class="description"><%= video[:short_description] %></p>
+    </div>
+  </li>
+<% end %>
+</ul>
