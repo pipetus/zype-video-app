@@ -1,0 +1,17 @@
+.content {
+
+  p {
+    padding: 1em;
+  }
+  
+  a {
+    padding: 1em;
+    color: gray;
+    text-decoration: none;
+
+    &:hover {
+      color: #50b5ed;
+      text-decoration: underline;
+    }
+  }
+}
