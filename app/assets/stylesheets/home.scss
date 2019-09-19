@@ -1,0 +1,18 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.logo {
+  background-color: #50b5ed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+
+  & img {
+    max-width: 81px;
+    max-height: 64px;
+  }
+}
