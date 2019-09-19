@@ -35,3 +35,9 @@ Once installed, start the Rails server with:
 ```bundle exec rails server```
 
 Then go to `http://localhost:3000` to see the app working.
+
+## RSpec
+
+You can run the unit tests with:
+
+```bundle exec rspec```
