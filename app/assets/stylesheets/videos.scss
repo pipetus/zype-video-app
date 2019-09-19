@@ -6,12 +6,17 @@
   .video {
     display: flex;
     flex-direction: row;
+    padding: 1em;
 
     .thumbnail {
       width: 200px;
       position: relative;
       text-align: center;
       justify-content: center;
+
+      .video-link {
+        padding: 0;
+      }
       
       img {
         max-width: 200px;
@@ -19,6 +24,9 @@
 
       .duration {
         position: absolute;
+        bottom: 5px;
+        right: 5px;
+        color: white;
       }
     }
     
