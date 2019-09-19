@@ -2,7 +2,6 @@ module ZypeApi
   class Client
     include HTTParty
     format :json
-    debug_output $stdout
 
     def initialize(options = {})
       self.class.base_uri(options.fetch(:base_uri, "#{zype_api_base_uri}/videos"))
@@ -36,7 +35,6 @@ module ZypeApi
       @default_headers ||= {
         'Content-Type' => 'application/json',
         'Accept' => 'application/json',
-        # 'Authorization' => AuthToken.encode(user_id: Thread.current[:current_user].id)
       }
     end
   end
