@@ -18,7 +18,7 @@ RSpec.describe Video, type: :model do
   
   describe '.get' do
     it 'calls the API to get one video' do
-      expect(subject.get(1)).to eq({})
+      expect(subject.get(1)).to be_a(Video)
       expect(zype_api).to have_received(:get)
     end
   end
