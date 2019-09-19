@@ -1,2 +1,5 @@
-<h1>Video#show</h1>
-<p>Find me in app/views/video/show.html.erb</p>
+<h1><%= @video[:title] %></h1>
+<div id="zype_<%= @video[:_id] %>" class="video-player">
+</div>
+<script src="https://player.zype.com/embed/<%= @video[:_id] %>.js?autoplay=true&app_key=<%= ZypeApi::Client.new.app_key %>" type="text/javascript"></script>
+<p><%= @video[:description] %></p>
