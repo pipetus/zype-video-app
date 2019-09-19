@@ -1,24 +1,37 @@
-# README
+# ZypeVideoApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This small application lists a number of videos from Zype and allows you to enter into their details and play.
+It uses just the basic Ruby on Rails default libraries and template system to build its UI.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+### Prerequisites
 
-* System dependencies
+- **Ruby 2.5 (or higher)**
 
-* Configuration
+  Use [RVM](https://rvm.io/rvm/install) to install this ruby version with its gemset.
 
-* Database creation
+- **git**
 
-* Database initialization
+  Use your system's package manager to get this tool.
 
-* How to run the test suite
+### Checkout
 
-* Services (job queues, cache servers, search engines, etc.)
+Use the following command to checkout from GitHub:
 
-* Deployment instructions
+```git clone git@github.com:pipetus/zype-video-app.git```
 
-* ...
+### Rails installation
+On the project root directory, you should run:
+
+1. `gem install rails` to get the necessary Ruby on Rails version.
+2. `bundle install` to install the local gems needed to run the app and prepare the development environment.
+3. `npm install` to add necessary NodeJS modules.
+
+## Usage
+
+Once installed, start the Rails server with:
+
+```bundle exec rails server```
+
+Then go to `http://localhost:3000` to see the app working.
